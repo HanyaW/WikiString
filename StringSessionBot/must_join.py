@@ -22,11 +22,11 @@ async def must_join_channel(bot: Client, msg: Message):
                     f"You must join [this channel]({link}) to use me. After joining try again !",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("✨ ᴄɪʟɪᴋ ᴘʀᴏᴊᴇᴄᴛ ✨", url=link)]
+                        [InlineKeyboardButton("🐥 𝚆𝚒𝚔𝚒 𝙿𝚛𝚘𝚓𝚎𝚌𝚝​ 🐥", url=link)]
                     ])
                 )
                 await msg.stop_propagation()
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"I'm not admin in the MUST_JOIN chat : {MUST_JOIN} !")
+        print(f"Saya bukan admin di MUST_JOIN chat : {MUST_JOIN} !")
