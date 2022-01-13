@@ -22,7 +22,7 @@ async def must_join_channel(bot: Client, msg: Message):
                     f"You must join [this channel]({link}) to use me. After joining try again !",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("🐥 𝚆𝚒𝚔𝚒 𝙿𝚛𝚘𝚓𝚎𝚌𝚝​ 🐥", url=link)]
+                        [InlineKeyboardButton("🐥 𝐖𝐢𝐤𝐢 𝐖​​ 🐥", url=link)]
                     ])
                 )
                 await msg.stop_propagation()
